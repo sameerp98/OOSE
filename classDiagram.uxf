@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>70</y>
-      <w>210</w>
-      <h>190</h>
+      <x>132</x>
+      <y>102</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>
 User/Client
@@ -24,31 +24,28 @@ schdeduleImage()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>460</x>
-      <y>60</y>
-      <w>210</w>
-      <h>190</h>
+      <x>366</x>
+      <y>96</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Providor
 
 --
--id: Long {composite}
-
++name: string
++virtualImages: &lt;virtualImage&gt;
 --
-#Operation(i: int): int
---
-Responsibilities
--- Resp1
--- Resp2</panel_attributes>
+getVirtualImages()
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>430</x>
-      <y>420</y>
-      <w>210</w>
-      <h>190</h>
+      <x>348</x>
+      <y>318</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Virtual Machine Monitor
 
@@ -64,10 +61,10 @@ sheduleImage()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>420</y>
-      <w>210</w>
-      <h>190</h>
+      <x>588</x>
+      <y>312</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes> Hardware
 
@@ -85,78 +82,76 @@ adjustVirtualResources()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>410</x>
-      <y>740</y>
-      <w>210</w>
-      <h>190</h>
+      <x>336</x>
+      <y>504</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Virtual Machine
 
 --
--id: long
++id: long
 -instanceType :virtualImage
+-startTime (time: Time)
+-stopTime(time: Time)
 --
-runImage()
---
-Responsibilities
--- Resp1
--- Resp2</panel_attributes>
+
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
-      <y>240</y>
-      <w>40</w>
-      <h>200</h>
+      <x>396</x>
+      <y>204</y>
+      <w>24</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=*
 </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>470</y>
-      <w>220</w>
-      <h>60</h>
+      <x>468</x>
+      <y>348</y>
+      <w>132</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
 executes</panel_attributes>
-    <additional_attributes>10.0;20.0;200.0;30.0</additional_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1210</x>
-      <y>140</y>
-      <w>210</w>
-      <h>190</h>
+      <x>816</x>
+      <y>144</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Server
 
 --
--id: Long 
--startTime (time :Time)
--stopTime (time: Time)
++id: Long 
 --
 -setImage(imgae: virtualImage)
+-setProcessorResources(amount: float)
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>10</x>
-      <y>100</y>
-      <w>420</w>
-      <h>710</h>
+      <x>96</x>
+      <y>120</y>
+      <w>252</w>
+      <h>426</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -167,10 +162,10 @@ m2=*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
-      <y>140</y>
-      <w>210</w>
-      <h>50</h>
+      <x>252</x>
+      <y>144</y>
+      <w>126</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -181,48 +176,30 @@ m2=*
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1210</x>
-      <y>400</y>
-      <w>210</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>Storage
-
---
--id: Long 
--allocatedSpace: float
---
-adjustSpace (amount :Storage)
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1230</x>
-      <y>700</y>
-      <w>210</w>
-      <h>190</h>
+      <x>834</x>
+      <y>480</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Network
 --
--id: Long 
++id: Long 
 -connectionType (connection: Network)
 -securutyProtocol(protocol: networkProtocol)
 --
-connect()
-disconnect()
-authenticate()
-</panel_attributes>
+-connect()
+-disconnect()
+-authenticate()
+-setsecurityProtocol()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1110</x>
-      <y>220</y>
-      <w>120</w>
-      <h>280</h>
+      <x>756</x>
+      <y>192</y>
+      <w>72</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>
 m1=*
@@ -234,28 +211,71 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1110</x>
-      <y>470</y>
-      <w>140</w>
-      <h>330</h>
+      <x>756</x>
+      <y>342</y>
+      <w>90</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 
 m2=*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;300.0;120.0;300.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;300.0;130.0;300.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>312</y>
+      <w>138</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Storage
+
+--
++id: Long 
+-allocatedSpace: float
+--
+-adjustSpace (amount :Storage)
+</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1030</x>
-      <y>470</y>
-      <w>200</w>
-      <h>40</h>
+      <x>756</x>
+      <y>336</y>
+      <w>66</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-
-m1=*
-m2=1</panel_attributes>
-    <additional_attributes>180.0;10.0;10.0;10.0</additional_attributes>
+m1=1
+
+m2=*</panel_attributes>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>708</x>
+      <y>342</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>426</y>
+      <w>24</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
 </diagram>
