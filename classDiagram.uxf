@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>6</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>132</x>
-      <y>102</y>
-      <w>126</w>
-      <h>114</h>
+      <x>99</x>
+      <y>72</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>
 User/Client
@@ -16,42 +16,44 @@ User/Client
 -username: string
 -password: string
 --
-requestResources()
-schdeduleImage()
-</panel_attributes>
+launchVM ()
+viewVM ()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>366</x>
-      <y>96</y>
-      <w>126</w>
-      <h>114</h>
+      <x>450</x>
+      <y>63</y>
+      <w>261</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>Providor
 
 --
 +name: string
-+virtualImages: &lt;virtualImage&gt;
++virtualImages: &lt;VirtualImage&gt;
++instance : &lt;InstanceType&gt;
+-virtualMachines: &lt;VirtualMachineMonitor&gt;
 --
-getVirtualImages()
---</panel_attributes>
+createVMM()
+getVMM()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>348</x>
-      <y>318</y>
-      <w>126</w>
-      <h>114</h>
+      <x>423</x>
+      <y>396</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
-    <panel_attributes>Virtual Machine Monitor
+    <panel_attributes>VirtualMachineMonitor
 
 --
 -id: Long 
--virtualImage : virtualImage
+-virtualImage : VirtualImage
+-instanceType : InstanceType
 --
 sheduleImage()
 
@@ -61,18 +63,17 @@ sheduleImage()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>588</x>
-      <y>312</y>
-      <w>126</w>
-      <h>114</h>
+      <x>747</x>
+      <y>405</y>
+      <w>189</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes> Hardware
 
 --
 -id: Long 
--getImageAddress()
+-image: VirtualImage
 --
-getMemoryAcess()
 adjustVirtualResources()
 
 
@@ -82,32 +83,36 @@ adjustVirtualResources()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>336</x>
-      <y>504</y>
-      <w>126</w>
-      <h>114</h>
+      <x>405</x>
+      <y>675</y>
+      <w>189</w>
+      <h>234</h>
     </coordinates>
-    <panel_attributes>Virtual Machine
+    <panel_attributes>
+VirtualImage
 
 --
-+id: long
--instanceType :virtualImage
--startTime (time: Time)
--stopTime(time: Time)
---
-
---</panel_attributes>
+-id: long
+-operatingSystem: string
+-instanceType :InstanceType
+-startTime
+-stopTime 
+-networkType
+-networkProtocol
+-port
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>204</y>
-      <w>24</w>
-      <h>126</h>
+      <x>495</x>
+      <y>225</y>
+      <w>63</w>
+      <h>189</h>
     </coordinates>
     <panel_attributes>lt=-
+creates
 m1=1
 m2=*
 </panel_attributes>
@@ -116,42 +121,40 @@ m2=*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>348</y>
-      <w>132</w>
-      <h>30</h>
+      <x>603</x>
+      <y>441</y>
+      <w>162</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
 executes</panel_attributes>
-    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>816</x>
-      <y>144</y>
-      <w>126</w>
-      <h>114</h>
+      <x>1125</x>
+      <y>135</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
-    <panel_attributes>Server
-
+    <panel_attributes>Server/VM
 --
 +id: Long 
 --
--setImage(imgae: virtualImage)
--setProcessorResources(amount: float)
+-setImage(image: VirtualImage)
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>96</x>
-      <y>120</y>
-      <w>252</w>
-      <h>426</h>
+      <x>45</x>
+      <y>99</y>
+      <w>378</w>
+      <h>639</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -162,12 +165,13 @@ m2=*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>144</y>
-      <w>126</w>
-      <h>30</h>
+      <x>279</x>
+      <y>135</y>
+      <w>189</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=-
+selects VM
 m1=1
 m2=*
 </panel_attributes>
@@ -176,30 +180,28 @@ m2=*
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>834</x>
-      <y>480</y>
-      <w>126</w>
-      <h>114</h>
+      <x>1116</x>
+      <y>639</y>
+      <w>261</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>Network
 --
 +id: Long 
--connectionType (connection: Network)
--securutyProtocol(protocol: networkProtocol)
 --
--connect()
--disconnect()
--authenticate()
--setsecurityProtocol()</panel_attributes>
+-connectssh()
+-disconnectssh()
+-authenticateUser()
+-setNetworkSecurity (image:VirtualImage)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
-      <y>192</y>
-      <w>72</w>
-      <h>168</h>
+      <x>1035</x>
+      <y>207</y>
+      <w>108</w>
+      <h>252</h>
     </coordinates>
     <panel_attributes>
 m1=*
@@ -211,24 +213,24 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
-      <y>342</y>
-      <w>90</w>
-      <h>198</h>
+      <x>1035</x>
+      <y>432</y>
+      <w>99</w>
+      <h>297</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 
 m2=*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;300.0;130.0;300.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;300.0;90.0;300.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>810</x>
-      <y>312</y>
-      <w>138</w>
-      <h>114</h>
+      <x>1116</x>
+      <y>387</y>
+      <w>234</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>Storage
 
@@ -236,17 +238,17 @@ m2=*</panel_attributes>
 +id: Long 
 -allocatedSpace: float
 --
--adjustSpace (amount :Storage)
+-adjustSpace (amount :VirtualImage)
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
-      <y>336</y>
-      <w>66</w>
-      <h>30</h>
+      <x>1035</x>
+      <y>423</y>
+      <w>99</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -257,25 +259,60 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>708</x>
-      <y>342</y>
-      <w>66</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>390</x>
-      <y>426</y>
-      <w>24</w>
-      <h>90</h>
+      <x>486</x>
+      <y>558</y>
+      <w>36</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=*</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>927</x>
+      <y>423</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Manages</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>747</x>
+      <y>675</y>
+      <w>189</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>
+InstanceType
+
+--
+-name: string
+-vCPU: int 
+-memory: int
+-instanceStorage: int
+-networkPerformance: int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>729</y>
+      <w>180</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+has</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
   </element>
 </diagram>

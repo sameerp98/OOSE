@@ -5,7 +5,7 @@
     <id>UMLActor</id>
     <coordinates>
       <x>88</x>
-      <y>330</y>
+      <y>275</y>
       <w>154</w>
       <h>154</h>
     </coordinates>
@@ -17,32 +17,20 @@ Resource Requester</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>605</x>
-      <y>275</y>
-      <w>110</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-&lt;&lt;include&gt;&gt;</panel_attributes>
-    <additional_attributes>40.0;60.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>880</x>
-      <y>187</y>
-      <w>110</w>
-      <h>99</h>
+      <x>902</x>
+      <y>143</y>
+      <w>143</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
-&lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;70.0</additional_attributes>
+&lt;&lt;includes&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;130.0;80.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>946</x>
-      <y>253</y>
+      <x>990</x>
+      <y>121</y>
       <w>154</w>
       <h>55</h>
     </coordinates>
@@ -53,21 +41,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>539</x>
-      <y>341</y>
-      <w>231</w>
-      <h>66</h>
-    </coordinates>
-    <panel_attributes>Virtualization Engine
-
-bg=blue</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>440</x>
-      <y>572</y>
+      <x>429</x>
+      <y>627</y>
       <w>264</w>
       <h>77</h>
     </coordinates>
@@ -78,9 +53,9 @@ bg=blue</panel_attributes>
     <id>UMLObject</id>
     <coordinates>
       <x>363</x>
-      <y>55</y>
+      <y>0</y>
       <w>792</w>
-      <h>407</h>
+      <h>594</h>
     </coordinates>
     <panel_attributes>Server Virtualization(Part of cloud computing)
 
@@ -91,29 +66,29 @@ valign=top</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>187</x>
-      <y>198</y>
-      <w>297</w>
-      <h>176</h>
+      <y>275</y>
+      <w>319</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;140.0;250.0;10.0</additional_attributes>
+    <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>187</x>
-      <y>341</y>
-      <w>275</w>
-      <h>297</h>
+      <y>286</y>
+      <w>264</w>
+      <h>407</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;10.0;230.0;245.0</additional_attributes>
+    <additional_attributes>10.0;10.0;220.0;345.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>902</x>
-      <y>539</y>
+      <x>836</x>
+      <y>869</y>
       <w>132</w>
       <h>44</h>
     </coordinates>
@@ -122,125 +97,22 @@ bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>605</x>
-      <y>396</y>
-      <w>121</w>
-      <h>198</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-&lt;&lt;include&gt;&gt;</panel_attributes>
-    <additional_attributes>40.0;10.0;15.0;160.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>748</x>
-      <y>374</y>
-      <w>220</w>
-      <h>187</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-&lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;180.0;150.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLObject</id>
     <coordinates>
       <x>363</x>
-      <y>495</y>
+      <y>605</y>
       <w>792</w>
-      <h>286</h>
+      <h>396</h>
     </coordinates>
     <panel_attributes>Virtualization
 valign=top</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>429</x>
-      <y>880</y>
-      <w>132</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Networking
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>638</x>
-      <y>880</y>
-      <w>176</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Package Management</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>891</x>
-      <y>880</y>
-      <w>187</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Container Orchestration</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>440</x>
-      <y>979</y>
-      <w>132</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Storage</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>649</x>
-      <y>979</y>
-      <w>165</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Cluster Management</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>902</x>
-      <y>979</y>
-      <w>187</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>Logging and Metrics</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLObject</id>
-    <coordinates>
-      <x>363</x>
-      <y>814</y>
-      <w>792</w>
-      <h>308</h>
-    </coordinates>
-    <panel_attributes>Virtualization Engine
-valign=top</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>1210</x>
-      <y>561</y>
+      <x>1221</x>
+      <y>726</y>
       <w>88</w>
       <h>121</h>
     </coordinates>
@@ -250,30 +122,30 @@ valign=top</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1023</x>
-      <y>550</y>
-      <w>220</w>
-      <h>55</h>
+      <x>957</x>
+      <y>737</y>
+      <w>297</w>
+      <h>176</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;10.0;180.0;30.0</additional_attributes>
+    <additional_attributes>10.0;140.0;250.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>693</x>
-      <y>572</y>
-      <w>550</w>
-      <h>55</h>
+      <x>682</x>
+      <y>649</y>
+      <w>572</w>
+      <h>121</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;30.0;480.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;500.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>473</x>
-      <y>682</y>
+      <x>462</x>
+      <y>858</y>
       <w>176</w>
       <h>44</h>
     </coordinates>
@@ -284,48 +156,176 @@ valign=top</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>187</x>
-      <y>341</y>
-      <w>308</w>
-      <h>385</h>
+      <y>286</y>
+      <w>297</w>
+      <h>616</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;10.0;260.0;330.0</additional_attributes>
+    <additional_attributes>10.0;10.0;250.0;540.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>638</x>
-      <y>572</y>
-      <w>605</w>
-      <h>154</h>
+      <x>627</x>
+      <y>737</y>
+      <w>627</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;120.0;530.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;550.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>638</x>
-      <y>550</y>
-      <w>286</w>
-      <h>176</h>
+      <x>627</x>
+      <y>858</y>
+      <w>231</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>240.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>190.0;30.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLHierarchy</id>
     <coordinates>
-      <x>462</x>
-      <y>77</y>
+      <x>484</x>
+      <y>165</y>
       <w>429</w>
-      <h>209</h>
+      <h>220</h>
     </coordinates>
     <panel_attributes>type=WorkProcess
-Request virtual resources
-	amt of h/w resource
-	VirtualImage(guestos)</panel_attributes>
+Launch VM
+	Select VirtualImage
+	Select Instance Type
+	Create Login/ssh</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>429</x>
+      <y>715</y>
+      <w>242</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Configure Virtuazlized Resources
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>187</x>
+      <y>286</y>
+      <w>264</w>
+      <h>495</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;220.0;430.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>473</x>
+      <y>88</y>
+      <w>275</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Monitor/View/Configure VM</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>187</x>
+      <y>110</y>
+      <w>308</w>
+      <h>209</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;170.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>737</x>
+      <y>110</y>
+      <w>275</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>682</x>
+      <y>660</y>
+      <w>187</w>
+      <h>242</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes>
+    <additional_attributes>150.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>726</y>
+      <w>594</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;30.0;520.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>187</x>
+      <y>286</y>
+      <w>319</w>
+      <h>231</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;270.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLHierarchy</id>
+    <coordinates>
+      <x>484</x>
+      <y>396</y>
+      <w>429</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>type=WorkProcess
+Register Domain
+	Choose Domain Name
+	Contact Deatils and purchase</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>484</x>
+      <y>33</y>
+      <w>363</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Search/View/Billing Details for Domains/VM</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>187</x>
+      <y>44</y>
+      <w>319</w>
+      <h>275</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;230.0;270.0;10.0</additional_attributes>
   </element>
 </diagram>
