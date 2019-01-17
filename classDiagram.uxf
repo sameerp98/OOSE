@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>5</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>185</x>
-      <y>140</y>
-      <w>105</w>
-      <h>120</h>
+      <x>204</x>
+      <y>132</y>
+      <w>126</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>
 User/Client
@@ -28,10 +28,10 @@ viewVM ()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>135</y>
-      <w>145</w>
-      <h>95</h>
+      <x>426</x>
+      <y>126</y>
+      <w>174</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Providor
 
@@ -47,10 +47,10 @@ getVMM()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>355</x>
-      <y>295</y>
-      <w>105</w>
-      <h>95</h>
+      <x>408</x>
+      <y>318</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>VirtualMachineMonitor
 
@@ -67,10 +67,10 @@ sheduleImage()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>530</x>
-      <y>300</y>
-      <w>105</w>
-      <h>55</h>
+      <x>624</x>
+      <y>312</y>
+      <w>126</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes> Hardware
 
@@ -87,10 +87,10 @@ adjustVirtualResources()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>345</x>
-      <y>450</y>
-      <w>105</w>
-      <h>130</h>
+      <x>396</x>
+      <y>504</y>
+      <w>126</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>
 VirtualImage
@@ -110,10 +110,10 @@ VirtualImage
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>395</x>
-      <y>225</y>
-      <w>40</w>
-      <h>80</h>
+      <x>456</x>
+      <y>234</y>
+      <w>48</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=-
 creates
@@ -125,24 +125,24 @@ m2=*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>320</y>
-      <w>85</w>
-      <h>25</h>
+      <x>528</x>
+      <y>342</y>
+      <w>108</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
 executes</panel_attributes>
-    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+    <additional_attributes>10.0;30.0;160.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>765</x>
-      <y>160</y>
-      <w>130</w>
-      <h>95</h>
+      <x>888</x>
+      <y>150</y>
+      <w>156</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Server/VM
 --
@@ -155,24 +155,24 @@ executes</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>145</x>
-      <y>155</y>
-      <w>210</w>
-      <h>325</h>
+      <x>156</x>
+      <y>150</y>
+      <w>252</w>
+      <h>396</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=*
 </panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;10.0;10.0;500.0;400.0;630.0</additional_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0;10.0;630.0;400.0;630.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>285</x>
-      <y>175</y>
-      <w>95</w>
-      <h>25</h>
+      <x>324</x>
+      <y>174</y>
+      <w>114</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-
 selects VM
@@ -184,10 +184,10 @@ m2=*
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>755</x>
-      <y>385</y>
-      <w>150</w>
-      <h>95</h>
+      <x>888</x>
+      <y>402</y>
+      <w>180</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Network
 --
@@ -202,39 +202,39 @@ m2=*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>700</x>
-      <y>200</y>
-      <w>75</w>
-      <h>105</h>
+      <x>822</x>
+      <y>198</y>
+      <w>78</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>
 m1=*
 m2=1
 
 </panel_attributes>
-    <additional_attributes>130.0;20.0;10.0;20.0;10.0;190.0</additional_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0;10.0;200.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>700</x>
-      <y>290</y>
-      <w>65</w>
-      <h>145</h>
+      <x>822</x>
+      <y>312</y>
+      <w>78</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 
 m2=*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;260.0;110.0;260.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0;110.0;220.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
-      <y>265</y>
-      <w>140</w>
-      <h>95</h>
+      <x>888</x>
+      <y>276</y>
+      <w>168</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Storage
 
@@ -249,24 +249,24 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>700</x>
-      <y>285</y>
-      <w>70</w>
-      <h>25</h>
+      <x>822</x>
+      <y>306</y>
+      <w>78</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 
 m2=*</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>385</y>
-      <w>20</w>
-      <h>75</h>
+      <x>450</x>
+      <y>426</y>
+      <w>24</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -276,22 +276,22 @@ m2=*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>290</y>
-      <w>85</w>
-      <h>40</h>
+      <x>744</x>
+      <y>312</y>
+      <w>96</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 Manages</panel_attributes>
-    <additional_attributes>10.0;60.0;150.0;10.0</additional_attributes>
+    <additional_attributes>10.0;40.0;140.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>515</x>
-      <y>450</y>
-      <w>105</w>
-      <h>130</h>
+      <x>600</x>
+      <y>504</y>
+      <w>126</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>
 InstanceType
@@ -308,10 +308,10 @@ InstanceType
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>445</x>
-      <y>500</y>
-      <w>80</w>
-      <h>15</h>
+      <x>516</x>
+      <y>564</y>
+      <w>96</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
@@ -319,10 +319,10 @@ InstanceType
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>30</y>
-      <w>145</w>
-      <h>95</h>
+      <x>426</x>
+      <y>0</y>
+      <w>174</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>DNSService
 
@@ -339,10 +339,10 @@ viewDomains()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>230</x>
-      <y>70</y>
-      <w>150</w>
-      <h>80</h>
+      <x>258</x>
+      <y>48</y>
+      <w>180</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=-
 Register/Assign/View
@@ -354,10 +354,10 @@ m2=*
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>585</x>
-      <y>35</y>
-      <w>125</w>
-      <h>95</h>
+      <x>684</x>
+      <y>6</y>
+      <w>150</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>&lt;&lt;DomainName&gt;&gt;
 --
@@ -370,16 +370,16 @@ m2=*
 -country: string
 -address: string
 --
-createDomain()</panel_attributes>
+checkDomain()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
-      <y>70</y>
-      <w>85</w>
-      <h>15</h>
+      <x>594</x>
+      <y>48</y>
+      <w>102</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
